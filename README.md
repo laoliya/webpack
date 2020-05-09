@@ -12,3 +12,6 @@ webpack ./src/index.js -o ./build/built.js --mode=production   ->  会以 .src/i
 处理less文件同上下载后还需要多一个npm i less-loader -D 
 
 处理 html 需要使用插件 npm i html-webpack-plugin -D
+
+处理图片资源需要使用 下载url-loader file-loader  npm i url-loader file-loader  -D
+处理html中引入的img  npm i url-loader html-loader  -D   (并且要关闭url-loader file-loader模块化使用commonJs （esMoudle: false,）)
