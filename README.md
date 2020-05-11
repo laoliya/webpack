@@ -21,3 +21,6 @@ webpack ./src/index.js -o ./build/built.js --mode=production   ->  会以 .src/i
 
 处理图片资源需要使用 下载url-loader file-loader  npm i url-loader file-loader  -D 
 处理html中引入的img  npm i url-loader html-loader  -D   (并且要关闭url-loader file-loader模块化使用commonJs （esMoudle: false,）) 
+
+开发服务器 devServer,用来自动化（自动编译，自动打开浏览器，自动刷新浏览器） npm i webpack-dev-server -D
+//devServer启动命令 npx webpack-dev-server
